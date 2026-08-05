@@ -3,244 +3,26 @@
 <robot name="planar_2r"
        xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!-- =============================-->
+    <!-- Robot propeties: Dimensions and color -->
     <!-- ============================= -->
-    <!-- Robot Dimensions              -->
+
+    <xacro:include filename="$(find planar_2r_description)/urdf/properties.xacro"/>
+    <!-- =============================-->
+    <!-- Robot materials    -->
     <!-- ============================= -->
-
-    <xacro:property name="link1_length" value="1.0"/>
-    <xacro:property name="link2_length" value="0.8"/>
-
-    <xacro:property name="link_radius" value="0.04"/>
-    <xacro:property name="base_radius" value="0.08"/>
-    <xacro:property name="base_length" value="0.05"/>
-
-    <!-- Robot Colors -->
-
-    <xacro:property name="base_color"
-                    value="0.25 0.25 0.25 1"/>
-
-    <xacro:property name="link1_color"
-                    value="0.0 0.45 0.74 1"/>
-
-    <xacro:property name="link2_color"
-                    value="0.85 0.33 0.10 1"/>
-
-    <xacro:property name="ee_color"
-                    value="0.93 0.69 0.13 1"/>
+    <xacro:include filename="$(find planar_2r_description)/urdf/materials.xacro"/>
 
     <!-- ================================================= -->
-    <!-- Base Link                                          -->
-    <!-- Reference frame located at Joint 1 (top of pedestal)       -->
+    <!-- Robot Links               -->
     <!-- ================================================= -->
+    <xacro:include filename="$(find planar_2r_description)/urdf/links.xacro"/>
 
-    <link name="base_link">
- 
-        <!-- ==================== -->
-        <!-- Visual Representation -->
-        <!-- ==================== -->
-
-        <visual>
-
-            <!--
-                Shift the cylinder downward so that the
-                top surface coincides with the base frame.
-            -->
-                <!--
-                  The base_link frame is located at the
-                  top center of the pedestal.
-                  The cylinder is shifted downward by
-                  half its height so that its top surface
-                  coincides with the frame.
-               -->
-
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
-
-            <geometry>
-
-                <cylinder
-                    radius="${base_radius}"
-                    length="${base_length}"/>
-
-            </geometry>
-
-            <material name="base_material">
-
-                <color rgba="${base_color}"/>
-
-            </material>
-
-        </visual>
-
-        <!-- ==================== -->
-        <!-- Collision Geometry   -->
-        <!-- ==================== -->
-
-        <collision>
-
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
-
-            <geometry>
-
-                <cylinder
-                    radius="${base_radius}"
-                    length="${base_length}"/>
-
-            </geometry>
-
-        </collision>
-
-        <!-- ==================== -->
-        <!-- Inertial Properties  -->
-        <!-- ==================== -->
-
-        <inertial>
-
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
-
-            <mass value="2.0"/>
-
-            <!--
-                Approximate inertia values.
-                These will be replaced later when
-                we study robot dynamics.
-            -->
-
-            <inertia
-                ixx="0.002"
-                ixy="0"
-                ixz="0"
-                iyy="0.002"
-                iyz="0"
-                izz="0.003"/>
-
-        </inertial>
-
-   
-    </link>
 
     <!-- ========================================================= -->
-    <!-- Link 1                                                    -->
-    <!-- Reference frame located at Joint 1                        -->
+    <!-- Robot Joints                                                  -->
     <!-- ========================================================= -->
-
-    <link name="link1">
-
-        <!-- ==================== -->
-        <!-- Visual Representation -->
-        <!-- ==================== -->
-
-        <visual>
-
-            <!--
-                The link frame is located at Joint 1.
-                Shift the cylinder by half its length so
-                that it extends from Joint 1 to Joint 2.
-            -->
-
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
-
-            <geometry>
-
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link1_length}"/>
-
-            </geometry>
-
-            <material name="link1_material">
-
-                <color rgba="${link1_color}"/>
-
-            </material>
-
-            
-        </visual>
-
-        <!-- ==================== -->
-        <!-- Collision Geometry   -->
-        <!-- ==================== -->
-
-        <collision>
-
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
-
-            <geometry>
-
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link1_length}"/>
-
-            </geometry>
-
-        </collision>
-
-        <!-- ==================== -->
-        <!-- Inertial Properties  -->
-        <!-- ==================== -->
-
-        <inertial>
-
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
-
-            <mass value="1.0"/>
-
-            <inertia
-                ixx="0.09"
-                ixy="0"
-                ixz="0"
-                iyy="0.09"
-                iyz="0"
-                izz="0.001"/>
-
-        </inertial>
-
-    </link>
-
-    <!-- ========================================================= -->
-    <!-- Joint 1                                                   -->
-    <!-- Connects base_link to link1                              -->
-    <!-- ========================================================= -->
-
-    <joint name="joint1" type="revolute">
-
-        <!-- Parent and Child Links -->
-
-        <parent link="base_link"/>
-        <child link="link1"/>
-
-        <!--
-            The link1 frame is located exactly at
-            Joint 1, which coincides with the
-            base_link frame.
-        -->
-
-        <origin
-            xyz="0 0 0"
-            rpy="0 0 0"/>
-
-        <!-- Rotation about the Z-axis -->
-
-        <axis xyz="0 0 1"/>
-
-        <!-- Joint Limits -->
-
-        <limit
-            lower="-3.14159265"
-            upper="3.14159265"
-            effort="50"
-            velocity="2.0"/>
-
-    </joint>
-
+    <xacro:include filename="$(find planar_2r_description)/urdf/joints.xacro"/>
 
 
 </robot>

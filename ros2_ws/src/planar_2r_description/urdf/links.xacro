@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- ================================================= -->
+    <!-- Base Link                                          -->
+    <!-- Reference frame located at Joint 1 (top of pedestal)       -->
+    <!-- ================================================= -->
+
+    <link name="base_link">
+
+        <!-- Visual -->
+         <!--
+                Shift the cylinder downward so that the
+                top surface coincides with the base frame.
+            -->
+                <!--
+                  The base_link frame is located at the
+                  top center of the pedestal.
+                  The cylinder is shifted downward by
+                  half its height so that its top surface
+                  coincides with the frame.
+               -->
+
+        <visual>
+
+            <origin xyz="0 0 ${-base_length/2}"
+                    rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder
+                    radius="${base_radius}"
+                    length="${base_length}"/>
+            </geometry>
+
+            <material name="base_material"/>
+
+        </visual>
+
+        <!-- Collision -->
+
+        <collision>
+
+            <origin xyz="0 0 ${-base_length/2}"
+                    rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder
+                    radius="${base_radius}"
+                    length="${base_length}"/>
+            </geometry>
+
+        </collision>
+
+        <!-- Inertia -->
+
+        <inertial>
+
+            <origin xyz="0 0 ${-base_length/2}"
+                    rpy="0 0 0"/>
+
+            <mass value="2.0"/>
+
+            <inertia
+                ixx="0.002"
+                ixy="0"
+                ixz="0"
+                iyy="0.002"
+                iyz="0"
+                izz="0.003"/>
+
+        </inertial>
+
+    </link>
+
+    <!-- ================================================= -->
+    <!-- Link 1                                             -->
+    <!-- Reference frame located at Joint 1                        -->
+    <!-- ================================================= -->
+
+    <link name="link1">
+
+        <visual>
+
+            <origin
+                xyz="${link1_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <geometry>
+
+                <cylinder
+                    radius="${link_radius}"
+                    length="${link1_length}"/>
+
+            </geometry>
+
+            <material name="link1_material"/>
+
+        </visual>
+
+        <collision>
+
+            <origin
+                xyz="${link1_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <geometry>
+
+                <cylinder
+                    radius="${link_radius}"
+                    length="${link1_length}"/>
+
+            </geometry>
+
+        </collision>
+
+        <inertial>
+
+            <origin
+                xyz="${link1_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <mass value="1.0"/>
+
+            <inertia
+                ixx="0.09"
+                ixy="0"
+                ixz="0"
+                iyy="0.09"
+                iyz="0"
+                izz="0.001"/>
+
+        </inertial>
+
+    </link>
+
+</robot>

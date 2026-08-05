@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- ========================================================= -->
+    <!-- Joint 1                                                   -->
+    <!-- Connects base_link to link1                              -->
+    <!-- ========================================================= -->
+
+    <joint name="joint1" type="revolute">
+
+        <parent link="base_link"/>
+        <child link="link1"/>
+
+        <!--
+            The base_link frame is located at Joint 1.
+            Therefore link1 starts exactly at the base frame.
+        -->
+
+        <origin
+            xyz="0 0 0"
+            rpy="0 0 0"/>
+
+        <!-- Rotation about +Z -->
+
+        <axis xyz="0 0 1"/>
+
+        <!-- Joint limits -->
+
+        <limit
+            lower="-3.14159265"
+            upper="3.14159265"
+            effort="50"
+            velocity="2.0"/>
+
+    </joint>
+
+</robot>
