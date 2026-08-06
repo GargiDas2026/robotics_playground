@@ -134,4 +134,65 @@
 
     </link>
 
+    <!-- ================================================= -->
+    <!-- Link 2                                             -->
+    <!-- Reference frame located at Joint 2                        -->
+    <!-- ================================================= -->
+
+    <link name="link2">
+
+        <visual>
+
+            <origin
+                xyz="${link2_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <geometry>
+
+                <cylinder
+                    radius="${link_radius}"
+                    length="${link2_length}"/>
+
+            </geometry>
+
+            <material name="link2_material"/>
+
+        </visual>
+
+        <collision>
+
+            <origin
+                xyz="${link2_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <geometry>
+
+                <cylinder
+                    radius="${link_radius}"
+                    length="${link2_length}"/>
+
+            </geometry>
+
+        </collision>
+
+        <inertial>
+
+            <origin
+                xyz="${link2_length/2} 0 0"
+                rpy="0 1.57079632679 0"/>
+
+            <mass value="1.0"/>
+
+            <inertia
+                ixx="0.09"
+                ixy="0"
+                ixz="0"
+                iyy="0.09"
+                iyz="0"
+                izz="0.001"/>
+
+        </inertial>
+
+    </link>
+
 </robot>

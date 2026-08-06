@@ -35,4 +35,37 @@
 
     </joint>
 
+
+    <!-- ========================================================= -->
+    <!-- Joint 2                                                   -->
+    <!-- Connects base_link to link1                              -->
+    <!-- ========================================================= -->
+
+    <joint name="joint2" type="revolute">
+
+        <parent link="link1"/>
+        <child link="link2"/>
+
+        <!--
+            The joint 2 starts at the end of link1.
+        -->
+
+        <origin
+            xyz="${link1_length} 0 0"
+            rpy="0 0 0"/>
+
+        <!-- Rotation about +Z -->
+
+        <axis xyz="0 0 1"/>
+
+        <!-- Joint limits -->
+
+        <limit
+            lower="-3.14159265"
+            upper="3.14159265"
+            effort="50"
+            velocity="2.0"/>
+
+    </joint>
+
 </robot>
