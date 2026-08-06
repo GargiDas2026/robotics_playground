@@ -2,30 +2,17 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <!-- ================================================= -->
-    <!-- Base Link                                          -->
-    <!-- Reference frame located at Joint 1 (top of pedestal)       -->
-    <!-- ================================================= -->
+    <!-- ========================================================= -->
+    <!-- Base Link                                                  -->
+    <!-- ========================================================= -->
 
     <link name="base_link">
 
-        <!-- Visual -->
-         <!--
-                Shift the cylinder downward so that the
-                top surface coincides with the base frame.
-            -->
-                <!--
-                  The base_link frame is located at the
-                  top center of the pedestal.
-                  The cylinder is shifted downward by
-                  half its height so that its top surface
-                  coincides with the frame.
-               -->
-
         <visual>
 
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
 
             <geometry>
                 <cylinder
@@ -37,12 +24,11 @@
 
         </visual>
 
-        <!-- Collision -->
-
         <collision>
 
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
 
             <geometry>
                 <cylinder
@@ -52,12 +38,11 @@
 
         </collision>
 
-        <!-- Inertia -->
-
         <inertial>
 
-            <origin xyz="0 0 ${-base_length/2}"
-                    rpy="0 0 0"/>
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
 
             <mass value="2.0"/>
 
@@ -73,126 +58,116 @@
 
     </link>
 
-    <!-- ================================================= -->
-    <!-- Link 1                                             -->
-    <!-- Reference frame located at Joint 1                        -->
-    <!-- ================================================= -->
 
-    <link name="link1">
+    <!-- ========================================================= -->
+    <!-- Cylindrical Link Macro                                    -->
+    <!-- ========================================================= -->
 
-        <visual>
+    <xacro:macro
+        name="cylindrical_link"
 
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
+        params="
+            name
+            length
+            radius
+            material_name
+            mass
+            ixx
+            iyy
+            izz">
 
-            <geometry>
+        <link name="${name}">
 
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link1_length}"/>
+            <!-- Visual -->
 
-            </geometry>
+            <visual>
 
-            <material name="link1_material"/>
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
 
-        </visual>
+                <geometry>
 
-        <collision>
+                    <cylinder
+                        radius="${radius}"
+                        length="${length}"/>
 
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
+                </geometry>
 
-            <geometry>
+                <material name="${material_name}"/>
 
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link1_length}"/>
+            </visual>
 
-            </geometry>
+            <!-- Collision -->
 
-        </collision>
+            <collision>
 
-        <inertial>
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
 
-            <origin
-                xyz="${link1_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
+                <geometry>
 
-            <mass value="1.0"/>
+                    <cylinder
+                        radius="${radius}"
+                        length="${length}"/>
 
-            <inertia
-                ixx="0.09"
-                ixy="0"
-                ixz="0"
-                iyy="0.09"
-                iyz="0"
-                izz="0.001"/>
+                </geometry>
 
-        </inertial>
+            </collision>
 
-    </link>
+            <!-- Inertia -->
 
-    <!-- ================================================= -->
-    <!-- Link 2                                             -->
-    <!-- Reference frame located at Joint 2                        -->
-    <!-- ================================================= -->
+            <inertial>
 
-    <link name="link2">
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
 
-        <visual>
+                <mass value="${mass}"/>
 
-            <origin
-                xyz="${link2_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
+                <inertia
+                    ixx="${ixx}"
+                    ixy="0"
+                    ixz="0"
+                    iyy="${iyy}"
+                    iyz="0"
+                    izz="${izz}"/>
 
-            <geometry>
+            </inertial>
 
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link2_length}"/>
+        </link>
 
-            </geometry>
+    </xacro:macro>
 
-            <material name="link2_material"/>
 
-        </visual>
+    <!-- ========================================================= -->
+    <!-- Link 1                                                    -->
+    <!-- ========================================================= -->
 
-        <collision>
+    <xacro:cylindrical_link
+        name="link1"
+        length="${link1_length}"
+        radius="${link_radius}"
+        material_name="link1_material"
+        mass="1.0"
+        ixx="0.09"
+        iyy="0.09"
+        izz="0.001"/>
 
-            <origin
-                xyz="${link2_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
 
-            <geometry>
+    <!-- ========================================================= -->
+    <!-- Link 2                                                    -->
+    <!-- ========================================================= -->
 
-                <cylinder
-                    radius="${link_radius}"
-                    length="${link2_length}"/>
-
-            </geometry>
-
-        </collision>
-
-        <inertial>
-
-            <origin
-                xyz="${link2_length/2} 0 0"
-                rpy="0 1.57079632679 0"/>
-
-            <mass value="1.0"/>
-
-            <inertia
-                ixx="0.09"
-                ixy="0"
-                ixz="0"
-                iyy="0.09"
-                iyz="0"
-                izz="0.001"/>
-
-        </inertial>
-
-    </link>
+    <xacro:cylindrical_link
+        name="link2"
+        length="${link2_length}"
+        radius="${link_radius}"
+        material_name="link2_material"
+        mass="1.0"
+        ixx="0.09"
+        iyy="0.09"
+        izz="0.001"/>
 
 </robot>

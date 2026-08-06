@@ -3,69 +3,105 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- ========================================================= -->
-    <!-- Joint 1                                                   -->
-    <!-- Connects base_link to link1                              -->
+    <!-- Revolute Joint Macro                                      -->
     <!-- ========================================================= -->
 
-    <joint name="joint1" type="revolute">
+    <xacro:macro
+        name="revolute_joint"
 
-        <parent link="base_link"/>
-        <child link="link1"/>
+        params="
+            name
+            parent_link
+            child_link
+            xyz
+            rpy
+            axis
+            lower
+            upper
+            effort
+            velocity">
 
-        <!--
-            The base_link frame is located at Joint 1.
-            Therefore link1 starts exactly at the base frame.
-        -->
+        <joint name="${name}" type="revolute">
 
-        <origin
-            xyz="0 0 0"
-            rpy="0 0 0"/>
+            <!-- Parent and Child Links -->
 
-        <!-- Rotation about +Z -->
+            <parent link="${parent_link}"/>
+            <child link="${child_link}"/>
 
-        <axis xyz="0 0 1"/>
+            <!-- Joint Frame -->
 
-        <!-- Joint limits -->
+            <origin
+                xyz="${xyz}"
+                rpy="${rpy}"/>
 
-        <limit
-            lower="-3.14159265"
-            upper="3.14159265"
-            effort="50"
-            velocity="2.0"/>
+            <!-- Joint Axis -->
 
-    </joint>
+            <axis xyz="${axis}"/>
+
+            <!-- Joint Limits -->
+
+            <limit
+                lower="${lower}"
+                upper="${upper}"
+                effort="${effort}"
+                velocity="${velocity}"/>
+
+        </joint>
+
+    </xacro:macro>
+
+
+    <!-- ========================================================= -->
+    <!-- Joint 1                                                   -->
+    <!-- ========================================================= -->
+
+    <xacro:revolute_joint
+
+        name="joint1"
+
+        parent_link="base_link"
+
+        child_link="link1"
+
+        xyz="0 0 0"
+
+        rpy="0 0 0"
+
+        axis="0 0 1"
+
+        lower="-3.14159265"
+
+        upper="3.14159265"
+
+        effort="50"
+
+        velocity="2.0"/>
 
 
     <!-- ========================================================= -->
     <!-- Joint 2                                                   -->
-    <!-- Connects base_link to link1                              -->
     <!-- ========================================================= -->
 
-    <joint name="joint2" type="revolute">
+    <xacro:revolute_joint
 
-        <parent link="link1"/>
-        <child link="link2"/>
+        name="joint2"
 
-        <!--
-            The joint 2 starts at the end of link1.
-        -->
+        parent_link="link1"
 
-        <origin
-            xyz="${link1_length} 0 0"
-            rpy="0 0 0"/>
+        child_link="link2"
 
-        <!-- Rotation about +Z -->
+        xyz="${link1_length} 0 0"
 
-        <axis xyz="0 0 1"/>
+        rpy="0 0 0"
 
-        <!-- Joint limits -->
+        axis="0 0 1"
 
-        <limit
-            lower="-3.14159265"
-            upper="3.14159265"
-            effort="50"
-            velocity="2.0"/>
+        lower="-3.14159265"
 
-    </joint>
+        upper="3.14159265"
+
+        effort="50"
+
+        velocity="2.0"/>
 
 </robot>

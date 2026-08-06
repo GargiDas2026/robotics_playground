@@ -22,6 +22,12 @@ def generate_launch_description():
 
                 "urdf_package_path": "urdf/planar_2r.urdf.xacro",
 
+                "rviz_config": PathJoinSubstitution([
+                    FindPackageShare("planar_2r_description"),
+                    "rviz",
+                    "planar_2r.rviz"
+                ]),
+
                 "jsp_gui": "true",
 
             }.items()
