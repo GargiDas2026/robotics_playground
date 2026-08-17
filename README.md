@@ -4,7 +4,7 @@
 >
 > This is a beginner-level project to understand and replicate a complete **robotics + ROS 2 pipeline** using **Python and C++**.
 >
-> The goal is to understand how a robotics system is built step-by-step — starting from robot modeling and ROS 2 communication, then moving through kinematics and eventually toward control.
+> The goal is to understand how a robotics system is built step-by-step, starting from robot modeling and ROS 2 communication, then moving through kinematics and eventually toward control.
 >
 > I will be posting **weekly updates** as the project develops.
 
@@ -108,30 +108,64 @@ The project is being organized into separate ROS 2 packages as the system develo
 Current structure:
 
 ```text
-planar_2r_ros2/
+robotics_playground/
 │
-├── planar_2r_description/
-│   ├── urdf/
-│   │   ├── planar_2r.urdf.xacro
-│   │   ├── properties.xacro
-│   │   ├── materials.xacro
-│   │   ├── links.xacro
-│   │   └── joints.xacro
-│   │
-│   ├── launch/
-│   │   └── display.launch.py
-│   │
-│   └── rviz/
-│       └── planar_2r.rviz
+├── docs/
+│   └── notes/
 │
-├── planar_2r_kinematics/
-│   ├── planar_2r_kinematics/
-│   │   └── forward_kinematics_node.py
-│   │
-│   └── test/
+├── ros2_ws/
+│   └── src/
+│       │
+│       ├── planar_2r_description/
+│       │   ├── urdf/
+│       │   │   ├── planar_2r.urdf.xacro
+│       │   │   ├── properties.xacro
+│       │   │   ├── materials.xacro
+│       │   │   ├── links.xacro
+│       │   │   └── joints.xacro
+│       │   │
+│       │   ├── launch/
+│       │   │   └── display.launch.py
+│       │   │
+│       │   ├── rviz/
+│       │   │   └── planar_2r.rviz
+│       │   │
+│       │   ├── CMakeLists.txt
+│       │   └── package.xml
+│       │
+│       └── planar_2r_kinematics/
+│           ├── planar_2r_kinematics/
+│           │   ├── __init__.py
+│           │   └── forward_kinematics_node.py
+│           │
+│           ├── resource/
+│           │   └── planar_2r_kinematics
+│           │
+│           ├── test/
+│           │   ├── test_copyright.py
+│           │   ├── test_flake8.py
+│           │   └── test_pep257.py
+│           │
+│           ├── package.xml
+│           ├── setup.py
+│           └── setup.cfg
+│
+├── scripts/
+│
+├── .gitignore
 │
 └── README.md
 ```
+The `ros2_ws` directory is the ROS 2 workspace. ROS 2 packages are created inside `ros2_ws/src`.
+
+The workspace is built from the workspace root:
+
+```bash
+cd ~/Documents/robotics_playground/ros2_ws
+colcon build
+```
+
+The packages themselves are not built by running `colcon build` from inside an individual package directory.
 
 Additional packages will be added as the project progresses.
 
@@ -148,12 +182,13 @@ The robot was initially defined using URDF and then reorganized using Xacro.
 The robot description was divided into separate files:
 
 ```text
-urdf/
-├── planar_2r.urdf.xacro
-├── properties.xacro
-├── materials.xacro
-├── links.xacro
-└── joints.xacro
+planar_2r_description/
+└── urdf/
+    ├── planar_2r.urdf.xacro
+    ├── properties.xacro
+    ├── materials.xacro
+    ├── links.xacro
+    └── joints.xacro
 ```
 
 ### Xacro Properties
