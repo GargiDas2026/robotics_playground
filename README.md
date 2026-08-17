@@ -171,7 +171,7 @@ Additional packages will be added as the project progresses.
 
 ---
 
-# Phase 1 — Robot Description
+# Phase 1 : Robot Description
 
 ## Status: Complete
 
@@ -246,7 +246,7 @@ This TF structure will also be used by the kinematics nodes.
 
 ---
 
-# Phase 2 — Forward Kinematics
+# Phase 2 : Forward Kinematics
 
 ## Status: Complete
 
