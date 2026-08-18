@@ -494,7 +494,7 @@ The robot can currently be moved through the joint-state GUI, and the FK node ca
 
 ---
 
-# Next Phase — Inverse Kinematics
+# Next Phase - Inverse Kinematics
 
 ## Status: Next
 
@@ -573,7 +573,7 @@ These phases will be developed and documented incrementally.
 
 This repository will be updated weekly as the project progresses.
 
-## Week 1 — Robot Description
+## Week 1 - Robot Description
 
 - Created ROS 2 workspace
 - Created planar 2R robot description package
@@ -593,7 +593,7 @@ The planar 2R robot can be launched and visualized in RViz, and the joints can b
 
 ---
 
-## Week 2 — Forward Kinematics
+## Week 2 - Forward Kinematics
 
 - Created the `planar_2r_kinematics` Python ROS 2 package
 - Created the forward kinematics node
