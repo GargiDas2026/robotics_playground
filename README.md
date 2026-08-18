@@ -1,4 +1,4 @@
-# Planar 2R Manipulator — ROS 2 Robotics Pipeline
+# Planar 2R Manipulator - ROS 2 Robotics Pipeline
 
 > **Beginner Robotics + ROS 2 Project**
 >
