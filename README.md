@@ -320,27 +320,13 @@ This keeps the URDF/Xacro robot description as the authoritative source of the r
 
 For the planar 2R manipulator, the end-effector position is calculated using:
 
-$$
-x_{EE}
-=
-L_1\cos(q_1)
-+
-L_2\cos(q_1+q_2)
-$$
+$$x_{EE} = L_1\cos(q_1) + L_2\cos(q_1+q_2)$$
 
-$$
-y_{EE}
-=
-L_1\sin(q_1)
-+
-L_2\sin(q_1+q_2)
-$$
+$$y_{EE} = L_1\sin(q_1) + L_2\sin(q_1+q_2)$$
 
 Since the robot is planar:
 
-$$
-z_{EE}=0
-$$
+$$z_{EE} = 0$$
 
 The Python ROS 2 node performs this calculation in real time using the current joint angles.
 
