@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- ========================================================= -->
+    <!-- Base Link                                                  -->
+    <!-- ========================================================= -->
+
+    <link name="base_link">
+
+        <visual>
+
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder
+                    radius="${base_radius}"
+                    length="${base_length}"/>
+            </geometry>
+
+            <material name="base_material"/>
+
+        </visual>
+
+        <collision>
+
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder
+                    radius="${base_radius}"
+                    length="${base_length}"/>
+            </geometry>
+
+        </collision>
+
+        <inertial>
+
+            <origin
+                xyz="0 0 ${-base_length/2}"
+                rpy="0 0 0"/>
+
+            <mass value="2.0"/>
+
+            <inertia
+                ixx="0.002"
+                ixy="0"
+                ixz="0"
+                iyy="0.002"
+                iyz="0"
+                izz="0.003"/>
+
+        </inertial>
+
+    </link>
+
+
+    <!-- ========================================================= -->
+    <!-- Cylindrical Link Macro                                    -->
+    <!-- ========================================================= -->
+
+    <xacro:macro
+        name="cylindrical_link"
+
+        params="
+            name
+            length
+            radius
+            material_name
+            mass
+            ixx
+            iyy
+            izz">
+
+        <link name="${name}">
+
+            <!-- Visual -->
+
+            <visual>
+
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
+
+                <geometry>
+
+                    <cylinder
+                        radius="${radius}"
+                        length="${length}"/>
+
+                </geometry>
+
+                <material name="${material_name}"/>
+
+            </visual>
+
+            <!-- Collision -->
+
+            <collision>
+
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
+
+                <geometry>
+
+                    <cylinder
+                        radius="${radius}"
+                        length="${length}"/>
+
+                </geometry>
+
+            </collision>
+
+            <!-- Inertia -->
+
+            <inertial>
+
+                <origin
+                    xyz="${length/2} 0 0"
+                    rpy="0 1.57079632679 0"/>
+
+                <mass value="${mass}"/>
+
+                <inertia
+                    ixx="${ixx}"
+                    ixy="0"
+                    ixz="0"
+                    iyy="${iyy}"
+                    iyz="0"
+                    izz="${izz}"/>
+
+            </inertial>
+
+        </link>
+
+    </xacro:macro>
+    <!-- ========================================================= -->
+    <!-- End Effector Link Macro                                   -->
+    <!-- ========================================================= -->
+
+    <xacro:macro
+        name="end_effector_link"
+        params="name">
+
+        <link name="${name}"/>
+
+    </xacro:macro>
+
+    <!-- ========================================================= -->
+    <!-- Link 1                                                    -->
+    <!-- ========================================================= -->
+
+    <xacro:cylindrical_link
+        name="link1"
+        length="${link1_length}"
+        radius="${link_radius}"
+        material_name="link1_material"
+        mass="1.0"
+        ixx="0.09"
+        iyy="0.09"
+        izz="0.001"/>
+
+
+    <!-- ========================================================= -->
+    <!-- Link 2                                                    -->
+    <!-- ========================================================= -->
+
+    <xacro:cylindrical_link
+        name="link2"
+        length="${link2_length}"
+        radius="${link_radius}"
+        material_name="link2_material"
+        mass="1.0"
+        ixx="0.09"
+        iyy="0.09"
+        izz="0.001"/>
+
+    <!-- ========================================================= -->
+    <!-- End Effector Link                                         -->
+    <!-- ========================================================= -->
+
+    <xacro:end_effector_link
+        name="ee_link"/>
+
+</robot>

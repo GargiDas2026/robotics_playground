@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<robot name="planar_2r"
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- =============================-->
+    <!-- Robot propeties: Dimensions and color -->
+    <!-- ============================= -->
+
+    <xacro:include filename="$(find planar_2r_description)/urdf/properties.xacro"/>
+    <!-- =============================-->
+    <!-- Robot materials    -->
+    <!-- ============================= -->
+    <xacro:include filename="$(find planar_2r_description)/urdf/materials.xacro"/>
+
+    <!-- ================================================= -->
+    <!-- Robot Links               -->
+    <!-- ================================================= -->
+    <xacro:include filename="$(find planar_2r_description)/urdf/links.xacro"/>
+
+
+    <!-- ========================================================= -->
+    <!-- Robot Joints                                                  -->
+    <!-- ========================================================= -->
+    <xacro:include filename="$(find planar_2r_description)/urdf/joints.xacro"/>
+
+
+</robot>

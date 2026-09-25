@@ -1,0 +1,4 @@
+source;share/planar_2r_description/local_setup.bash
+source;share/planar_2r_description/local_setup.dsv
+source;share/planar_2r_description/local_setup.sh
+source;share/planar_2r_description/local_setup.zsh

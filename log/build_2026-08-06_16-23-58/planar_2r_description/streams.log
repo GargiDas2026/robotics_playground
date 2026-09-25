@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description -- -j8 -l8
+[0.035s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description -- -j8 -l8
+[0.041s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description
+[0.047s] -- Install configuration: ""
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch
+[0.047s] -- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch/display.launch.py
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz
+[0.047s] -- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz/planar_2r.rviz
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/joints.xacro
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/planar_2r.urdf.xacro
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/properties.xacro
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/materials.xacro
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/links.xacro
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/meshes
+[0.047s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/ament_index/resource_index/package_run_dependencies/planar_2r_description
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/ament_index/resource_index/parent_prefix_path/planar_2r_description
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/environment/ament_prefix_path.sh
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/environment/ament_prefix_path.dsv
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/environment/path.sh
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/environment/path.dsv
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/local_setup.bash
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/local_setup.sh
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/local_setup.zsh
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/local_setup.dsv
+[0.048s] -- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/package.dsv
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/ament_index/resource_index/packages/planar_2r_description
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/cmake/planar_2r_descriptionConfig.cmake
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/cmake/planar_2r_descriptionConfig-version.cmake
+[0.048s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/package.xml
+[0.049s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description

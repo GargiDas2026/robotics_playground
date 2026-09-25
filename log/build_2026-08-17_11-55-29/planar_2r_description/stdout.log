@@ -1,0 +1,11 @@
+-- Install configuration: ""
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch/display.launch.py
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz/planar_2r.rviz
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf
+-- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/joints.xacro
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/planar_2r.urdf.xacro
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/properties.xacro
+-- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/materials.xacro
+-- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/links.xacro

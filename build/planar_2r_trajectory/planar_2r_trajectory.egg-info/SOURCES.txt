@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/PKG-INFO
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/SOURCES.txt
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/dependency_links.txt
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/requires.txt
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/top_level.txt
+../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/zip-safe
+planar_2r_trajectory/__init__.py
+resource/planar_2r_trajectory
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

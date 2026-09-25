@@ -1,0 +1,21 @@
+[0.008s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description -- -j8 -l8
+[0.039s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description -- -j8 -l8
+[0.047s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description
+[0.056s] -- Install configuration: ""
+[0.056s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch
+[0.056s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/launch/display.launch.py
+[0.056s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz
+[0.056s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/rviz/planar_2r.rviz
+[0.056s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf
+[0.056s] -- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/joints.xacro
+[0.057s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/planar_2r.urdf.xacro
+[0.057s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/properties.xacro
+[0.057s] -- Up-to-date: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/materials.xacro
+[0.057s] -- Installing: /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_description/share/planar_2r_description/urdf/links.xacro
+[0.057s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.057s]   file INSTALL cannot find
+[0.057s]   "/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_description/meshes":
+[0.057s]   No such file or directory.
+[0.057s] 
+[0.057s] [0m
+[0.058s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_description

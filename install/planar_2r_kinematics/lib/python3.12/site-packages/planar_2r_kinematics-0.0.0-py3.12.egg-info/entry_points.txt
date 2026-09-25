@@ -1,0 +1,3 @@
+[console_scripts]
+forward_kinematics = planar_2r_kinematics.forward_kinematics_node:main
+inverse_kinematics = planar_2r_kinematics.inverse_kinematics_node:main

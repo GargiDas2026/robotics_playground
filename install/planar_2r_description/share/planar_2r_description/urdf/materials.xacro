@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- ========================= -->
+    <!-- Robot Materials           -->
+    <!-- ========================= -->
+
+    <material name="base_material">
+        <color rgba="${base_color}"/>
+    </material>
+
+    <material name="link1_material">
+        <color rgba="${link1_color}"/>
+    </material>
+
+    <material name="link2_material">
+        <color rgba="${link2_color}"/>
+    </material>
+
+    <material name="ee_material">
+        <color rgba="${ee_color}"/>
+    </material>
+
+</robot>

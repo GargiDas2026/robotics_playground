@@ -1,0 +1,24 @@
+[0.551s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planar_2r_kinematics build --build-base /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/build install --record /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/install.log --install-scripts $base/lib/planar_2r_kinematics --single-version-externally-managed install_data
+[0.733s] running egg_info
+[0.746s] writing ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/PKG-INFO
+[0.746s] writing dependency_links to ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/dependency_links.txt
+[0.746s] writing entry points to ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/entry_points.txt
+[0.746s] writing requirements to ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/requires.txt
+[0.746s] writing top-level names to ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/top_level.txt
+[0.772s] reading manifest file '../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/SOURCES.txt'
+[0.773s] writing manifest file '../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info/SOURCES.txt'
+[0.773s] running build
+[0.773s] running build_py
+[0.773s] copying planar_2r_kinematics/forward_kinematics_node.py -> /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/build/lib/planar_2r_kinematics
+[0.773s] running install
+[0.778s] running install_lib
+[0.791s] copying /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/build/lib/planar_2r_kinematics/forward_kinematics_node.py -> /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics
+[0.792s] byte-compiling /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/forward_kinematics_node.py to forward_kinematics_node.cpython-312.pyc
+[0.793s] running install_data
+[0.793s] running install_egg_info
+[0.807s] removing '/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics-0.0.0-py3.12.egg-info' (and everything under it)
+[0.807s] Copying ../../build/planar_2r_kinematics/planar_2r_kinematics.egg-info to /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics-0.0.0-py3.12.egg-info
+[0.808s] running install_scripts
+[0.898s] Installing forward_kinematics script to /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics
+[0.898s] writing list of installed files to '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/install.log'
+[0.922s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_kinematics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planar_2r_kinematics build --build-base /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/build install --record /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_kinematics/install.log --install-scripts $base/lib/planar_2r_kinematics --single-version-externally-managed install_data

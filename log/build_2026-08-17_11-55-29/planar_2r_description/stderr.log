@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_description/meshes":
+  No such file or directory.
+
+[0m
