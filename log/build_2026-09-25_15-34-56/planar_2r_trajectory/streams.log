@@ -1,0 +1,21 @@
+[0.559s] Invoking command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_trajectory': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_trajectory/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planar_2r_trajectory build --build-base /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/build install --record /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/install.log --install-scripts $base/lib/planar_2r_trajectory --single-version-externally-managed install_data
+[0.737s] running egg_info
+[0.749s] writing ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/PKG-INFO
+[0.749s] writing dependency_links to ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/dependency_links.txt
+[0.749s] writing entry points to ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/entry_points.txt
+[0.749s] writing requirements to ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/requires.txt
+[0.750s] writing top-level names to ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/top_level.txt
+[0.775s] reading manifest file '../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/SOURCES.txt'
+[0.775s] writing manifest file '../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info/SOURCES.txt'
+[0.775s] running build
+[0.775s] running build_py
+[0.776s] running install
+[0.780s] running install_lib
+[0.793s] running install_data
+[0.793s] running install_egg_info
+[0.807s] removing '/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_trajectory/lib/python3.12/site-packages/planar_2r_trajectory-0.0.0-py3.12.egg-info' (and everything under it)
+[0.807s] Copying ../../build/planar_2r_trajectory/planar_2r_trajectory.egg-info to /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_trajectory/lib/python3.12/site-packages/planar_2r_trajectory-0.0.0-py3.12.egg-info
+[0.808s] running install_scripts
+[0.894s] Installing cartesian_trajectory script to /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_trajectory/lib/planar_2r_trajectory
+[0.894s] writing list of installed files to '/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/install.log'
+[0.916s] Invoked command in '/home/gargi-das/Documents/robotics_playground/ros2_ws/src/planar_2r_trajectory' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_trajectory/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planar_2r_trajectory build --build-base /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/build install --record /home/gargi-das/Documents/robotics_playground/ros2_ws/build/planar_2r_trajectory/install.log --install-scripts $base/lib/planar_2r_trajectory --single-version-externally-managed install_data

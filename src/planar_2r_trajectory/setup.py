@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'cartesian_trajectory = planar_2r_trajectory.cartesian_trajectory_node:main',
         ],
     },
 )
