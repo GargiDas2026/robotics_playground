@@ -1,10 +1,14 @@
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/jacobian_validation_node.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__init__.py
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/jacobian_node.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/forward_kinematics_node.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/inverse_kinematics_node_with_one_sol.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/inverse_kinematics_node_elbow_up_and_down.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/trajectory_validation_node.py
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/inverse_kinematics_node.py
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/jacobian_validation_node.cpython-312.pyc
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/__init__.cpython-312.pyc
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/jacobian_node.cpython-312.pyc
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/forward_kinematics_node.cpython-312.pyc
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/inverse_kinematics_node_with_one_sol.cpython-312.pyc
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics/__pycache__/inverse_kinematics_node_elbow_up_and_down.cpython-312.pyc
@@ -21,4 +25,6 @@
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/python3.12/site-packages/planar_2r_kinematics-0.0.0-py3.12.egg-info/requires.txt
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics/forward_kinematics
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics/inverse_kinematics
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics/jacobian
+/home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics/jacobian_validation
 /home/gargi-das/Documents/robotics_playground/ros2_ws/install/planar_2r_kinematics/lib/planar_2r_kinematics/trajectory_validation

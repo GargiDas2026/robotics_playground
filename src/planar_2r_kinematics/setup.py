@@ -27,6 +27,8 @@ setup(
            'forward_kinematics = planar_2r_kinematics.forward_kinematics_node:main',
            'inverse_kinematics = planar_2r_kinematics.inverse_kinematics_node:main',
            'trajectory_validation = planar_2r_kinematics.trajectory_validation_node:main',
+           'jacobian = planar_2r_kinematics.jacobian_node:main',
+           'jacobian_validation = planar_2r_kinematics.jacobian_validation_node:main',
         ],
     },
 )

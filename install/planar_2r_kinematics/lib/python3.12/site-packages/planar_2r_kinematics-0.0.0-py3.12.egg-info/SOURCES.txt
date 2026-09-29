@@ -13,6 +13,8 @@ planar_2r_kinematics/forward_kinematics_node.py
 planar_2r_kinematics/inverse_kinematics_node.py
 planar_2r_kinematics/inverse_kinematics_node_elbow_up_and_down.py
 planar_2r_kinematics/inverse_kinematics_node_with_one_sol.py
+planar_2r_kinematics/jacobian_node.py
+planar_2r_kinematics/jacobian_validation_node.py
 planar_2r_kinematics/trajectory_validation_node.py
 resource/planar_2r_kinematics
 test/test_copyright.py
